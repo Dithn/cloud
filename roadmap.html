@@ -1,0 +1,15 @@
+---
+title: Roadmap
+---
+
+
+<div class="roadmap">
+	{% for change in site.posts %}
+		<div class="roadmap-item">
+
+			{{ change.content }}
+
+			<p class="editor-link"><a href="cloudcannon:collections/{{ change.path }}" class="btn"><strong>&#9998;</strong> Update Entry</a></p>
+		</div>
+	{% endfor %}
+</div>
